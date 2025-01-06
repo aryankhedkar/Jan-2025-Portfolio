@@ -1,0 +1,144 @@
+/* ----------------------------------------------------------------------------
+   1. IMPORT GOOGLE FONTS
+   ----------------------------------------------------------------------------*/
+   @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+
+   /* ----------------------------------------------------------------------------
+   2. GLOBAL STYLES
+   ----------------------------------------------------------------------------*/
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  font-family: 'Inter', sans-serif;
+  color: white;
+}
+
+/* ----------------------------------------------------------------------------
+   3. EXPERIENCE SECTION
+   ----------------------------------------------------------------------------*/
+/* Slightly elevate the "Snapshot of My Experience" section with a subtle backdrop or background */
+.experience-section {
+  background-color: rgba(255, 255, 255, 0.01); /* Very subtle white overlay */
+  padding: 3rem 1rem; /* Extra padding for breathing room */
+  margin: 2rem 0;     /* Space above and below */
+  border-radius: 8px; /* Soft corners for a modern look */
+}
+
+/* If you’d like a subtle bottom border or divider: 
+.experience-section {
+  border-bottom: 1px solid #333;
+} 
+*/
+
+/* ----------------------------------------------------------------------------
+   4. CARD STYLES
+   ----------------------------------------------------------------------------*/
+/* Add a subtle border or shadow to cards if you want them to stand out */
+.card-item {
+  background-color: transparent !important;
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Very subtle border */
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 20px rgba(29, 161, 242, 0.1); /* Light accent shadow */
+}
+.card-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+  font-weight: 600;
+  color: #1da1f2; /* Tie in your accent color for the header text */
+}
+.card-body p {
+  margin-bottom: 0; /* Remove default margin to keep it tight */
+}
+
+   
+   /* ----------------------------------------------------------------------------
+      3. FOOTER STYLES
+      ----------------------------------------------------------------------------*/
+   /* Subtle hover for footer links */
+   .footer-link {
+     color: #ffffff;
+     text-decoration: none;
+     transition: color 0.2s ease-in-out;
+   }
+   .footer-link:hover {
+     color: #1da1f2;
+     text-decoration: none;
+   }
+   
+   /* Grayish divider line in the footer */
+   hr.bg-secondary {
+     border-color: #333;
+   }
+   
+   /* Profile Picture: Smaller size, circular frame */
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover; /* Ensures the image fills the circle */
+  margin: 0 auto;    /* Center it horizontally if needed */
+  display: block;    /* Required for margin: 0 auto to work on an <img> */
+}
+
+.card, .contact-card, .about-card {
+  background-color: transparent !important;
+  border: none;
+  color: white
+}
+
+.backdrop {
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(4px);
+}
+
+.text-muted {
+  color: #ccc !important; /* or #bbb, for instance */
+}
+
+.vision-text {
+  font-size: 1.5rem; 
+  color: #ccc; 
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+
+.about-page-content h2 {
+  text-align: center;
+}
+
+.about-page-content {
+  background-color: #100;
+  color: white;           /* Light grey text for contrast */
+  padding: 2rem;
+}
+
+.about-page-content p {
+  text-align: justify; /* Justify text for improved readability */
+}
+
+
+.about-hero-section {
+  min-height: 40vh; /* or 50vh, to create a taller hero area */
+  background: url("/assets/images/about_hero_bg.jpg") center/cover no-repeat;
+  position: relative;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* Tinted overlay if you want it */
+}
+
+.hero-content {
+  z-index: 1; /* Ensures text is on top of overlay */
+  color: #fff; /* White text, if background is dark */
+}
+
